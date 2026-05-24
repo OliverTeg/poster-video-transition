@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>抑郁症与躯体化宣传页</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="stage" aria-label="宣传视频与海报">
+      <section class="poster-scene" aria-label="宣传海报">
+        <img src="./assets/poster.png" alt="抑郁症与躯体化三折页宣传海报" />
+      </section>
+
+      <section class="video-scene" aria-label="开场视频">
+        <video
+          id="introVideo"
+          src="./assets/intro.mp4"
+          autoplay
+          playsinline
+          preload="auto"
+        ></video>
+      </section>
+
+      <div class="ripple-layer" aria-hidden="true">
+        <span class="ripple ripple-a"></span>
+        <span class="ripple ripple-b"></span>
+        <span class="ripple ripple-c"></span>
+      </div>
+
+      <button class="play-fallback" id="playFallback" type="button">
+        点击播放视频
+      </button>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
