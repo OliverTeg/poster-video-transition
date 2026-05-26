@@ -9,7 +9,20 @@
   <body>
     <main class="stage" aria-label="宣传视频与海报">
       <section class="poster-scene" aria-label="宣传海报">
-        <img src="./assets/poster.png" alt="抑郁症与躯体化三折页宣传海报" />
+        <img
+          id="posterImage"
+          src="./assets/poster-1.png"
+          alt="抑郁症与躯体化三折页宣传海报"
+        />
+        <nav class="poster-nav" aria-label="宣传册页面切换">
+          <button class="nav-button" id="prevPoster" type="button" aria-label="上一页">
+            ‹
+          </button>
+          <span class="page-indicator" id="pageIndicator">1 / 2</span>
+          <button class="nav-button" id="nextPoster" type="button" aria-label="下一页">
+            ›
+          </button>
+        </nav>
       </section>
 
       <section class="video-scene" aria-label="开场视频">
@@ -28,8 +41,10 @@
         <span class="ripple ripple-c"></span>
       </div>
 
-      <button class="play-fallback" id="playFallback" type="button">
-        点击播放视频
+      <button class="play-fallback" id="playFallback" type="button" aria-label="播放开场视频">
+        <span class="play-icon" aria-hidden="true"></span>
+        <span class="play-text">点击播放视频</span>
+        <span class="play-hint">播放结束后进入宣传册</span>
       </button>
     </main>
 
